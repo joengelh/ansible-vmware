@@ -1,0 +1,6 @@
+---
+- name: wake physical hosts
+  become: yes
+  hosts: master
+  roles:
+    - machine-wake

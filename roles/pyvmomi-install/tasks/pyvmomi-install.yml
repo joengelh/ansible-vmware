@@ -1,0 +1,4 @@
+---
+- name: install pyvmomi
+  pip:
+    name: pyvmomi

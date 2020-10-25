@@ -1,0 +1,2 @@
+---
+- include_tasks: vm-stop.yml

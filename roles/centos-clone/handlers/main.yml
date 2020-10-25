@@ -1,0 +1,10 @@
+---
+- name: li-counter
+  command: Rscript /home/master/ansible-vmware/scripts/R/licounter.R
+
+- name: git-adall
+  command: bash /home/master/ansible-vmware/scripts/sh/adall.sh
+  become_user: master
+  args:
+    chdir: /home/master/ansible-vmware
+

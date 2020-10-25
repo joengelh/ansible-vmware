@@ -1,0 +1,6 @@
+---
+- name: stop vm
+  become: yes
+  hosts: master
+  roles:
+    - vm-stop

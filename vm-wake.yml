@@ -1,0 +1,6 @@
+---
+- name: wake-vm
+  become: yes
+  hosts: master
+  roles:
+    - vm-wake

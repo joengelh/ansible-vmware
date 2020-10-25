@@ -1,0 +1,11 @@
+---
+- name: Remove vm
+  vmware_guest:
+    hostname: "{{ vaddr }}"
+    username: "{{ vusrname }}"
+    password: "{{ vpasswd }}"
+    cluster: "{{ vclustr}}"
+    name: "{{ vmname }}"
+    validate_certs: no
+    state: absent
+    force: yes

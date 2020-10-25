@@ -1,0 +1,6 @@
+---
+- name: run stresstest on all centos 7 vms
+  become: yes
+  hosts: centos7_64Guest
+  roles:
+    - stresstest-run

@@ -1,0 +1,6 @@
+---
+- name: remove-vm
+  become: yes
+  hosts: master
+  roles:
+    - vm-remove

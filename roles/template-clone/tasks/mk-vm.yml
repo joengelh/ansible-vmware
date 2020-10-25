@@ -1,0 +1,14 @@
+- name: Clone the Windows 10 Template
+  vmware_guest:
+    hostname: "{{ vaddr }}"
+    username: "{{ vusrname }}"
+    password: "{{ vpasswd }}"
+    validate_certs: False
+    name: "{{ vmname }}"
+    template: "{{ vtmplate }}"
+    datacenter: "{{ vdd }}"
+    folder: "{{ vfoldr }}"
+    state: poweredon
+    cluster: "{{ vclustr }}"
+    wait_for_ip_address: no
+  register: result

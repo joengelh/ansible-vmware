@@ -1,0 +1,6 @@
+---
+- name: yum-update
+  become: yes
+  hosts: master
+  roles:
+    - yum-update

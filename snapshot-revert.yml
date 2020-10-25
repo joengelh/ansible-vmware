@@ -1,0 +1,6 @@
+---
+- name: revert vm to snaptshot
+  become: yes
+  hosts: master
+  roles:
+    - snapshot-revert

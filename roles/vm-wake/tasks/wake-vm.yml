@@ -1,0 +1,11 @@
+---
+- name: Set the state of a virtual machine to poweron using MoID
+  vmware_guest_powerstate:
+    hostname: "{{ vaddr }}"
+    username: "{{ vusrname }}"
+    password: "{{ vpasswd }}"
+    validate_certs: no
+    folder: "/{{ vdd }}/vm/"
+    name: "{{ vmname }}"
+    state: powered-on
+    state_change_timeout: 90

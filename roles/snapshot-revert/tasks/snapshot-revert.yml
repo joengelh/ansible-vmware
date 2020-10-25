@@ -1,0 +1,12 @@
+---
+- name: reset vm to snapshot
+  vmware_guest_snapshot:
+    hostname: "{{ vaddr }}"
+    username: "{{ vusrname }}"
+    password: "{{ vpasswd }}"
+    datacenter: "{{ vdd }}"
+    folder: "/{{ vdd }}/vm/"
+    name: "{{ vmname }}"
+    state: revert
+    snapshot_name: "{{ vsnapshot }}"
+    validate_certs: no

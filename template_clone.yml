@@ -1,0 +1,6 @@
+---
+- name: clone windows
+  become: yes
+  hosts: master
+  roles:
+    - template-clone

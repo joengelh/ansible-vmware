@@ -1,0 +1,6 @@
+---
+- name: set machines hostnames
+  hosts: all
+  become: yes
+  roles:
+    - hostname-set

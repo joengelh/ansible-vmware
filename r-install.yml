@@ -1,0 +1,6 @@
+---
+- name: r-install
+  become: yes
+  hosts: master
+  roles:
+    - r-install

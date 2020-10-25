@@ -1,0 +1,6 @@
+---
+- name: clone-centos
+  become: yes
+  hosts: master
+  roles:
+    - centos-clone

@@ -1,0 +1,6 @@
+---
+- name: install pyvmomi
+  become: yes
+  hosts: master
+  roles:
+    - pyvmomi-install
