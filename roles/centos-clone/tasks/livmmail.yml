@@ -2,8 +2,8 @@
   mail:
     host: smtp.gmail.com
     port: 587
-    username: automation.service.vcc@gmail.com
-    password: 00348517c83f758312c0112657fdf4a9
+    username: {{ email }}
+    password: {{ password }} 
     to: Beispiel Mitarbeiter <Beispiel.Mitarbeiter.vcc@gmail.com>
     subject: Automated Service >>Linux VM<< has been delivered
     body: System {{ vmname }} has been successfully provisioned and is available now at {{ result.instance.ipv4 }}, using SSH.
