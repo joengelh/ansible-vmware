@@ -8,4 +8,7 @@
     folder: "/{{ vdd }}/vm/"
     name: "{{ vmname }}"
     state: powered-on
-    state_change_timeout: 120
+
+- name: wait for the VM to be powered on
+  wait_for:
+    timeout: 120
