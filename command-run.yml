@@ -1,0 +1,6 @@
+---
+- name: run any command
+  hosts: "{{ hosts }}"
+  become: yes
+  roles:
+  - command-run
