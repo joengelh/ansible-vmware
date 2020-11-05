@@ -1,0 +1,3 @@
+- name: waiter
+  wait_for:
+    dalay: 120
