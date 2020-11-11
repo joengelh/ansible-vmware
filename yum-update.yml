@@ -1,6 +1,6 @@
 ---
 - name: yum-update
-  become: centos8_64Guest 
-  hosts: all
+  become: yes
+  hosts: centos8_64Guest
   roles:
     - yum-update
