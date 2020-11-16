@@ -1,6 +1,0 @@
----
-- name: start dockercontainer
-  hosts: jumphost
-  become: yes
-  roles:
-  - dockercontainer-start
