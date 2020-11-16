@@ -1,4 +1,5 @@
 - name: Start a container and use an env file
-  community.general.docker_container:
+  docker_container:
     name: mailadvisor
     image: jengelh/dockerhub-mailadvisor
+    state: started
