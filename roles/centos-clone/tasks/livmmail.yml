@@ -2,8 +2,8 @@
   mail:
     host: smtp.gmail.com
     port: 587
-    username: {{ email }}
-    password: {{ password }} 
+    username: "{{ email }}"
+    password: "{{ password }}"
     to: Beispiel Mitarbeiter <Beispiel.Mitarbeiter.vcc@gmail.com>
     subject: Automated Service >>Linux VM<< has been delivered
-    body: System {{ vmname }} has been successfully provisioned and is available now at {{ result.instance.ipv4 }}, using SSH.
+    body: System "{{ vmname }}" has been successfully provisioned and is available now at "{{ result.instance.ipv4 }}", using SSH.

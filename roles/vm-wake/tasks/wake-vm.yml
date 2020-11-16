@@ -8,4 +8,4 @@
     folder: "/{{ vdd }}/vm/"
     name: "{{ vmname }}"
     state: powered-on
-    state_change_timeout: 90
+  notify: waiter

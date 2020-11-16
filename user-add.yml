@@ -1,6 +1,6 @@
 ---
 - name: add user, place ssh keys and grant sudoless password sudo permission
   become: yes
-  hosts: rootmaster
+  hosts: crc
   roles:
     - user-add
