@@ -1,4 +1,4 @@
 [management]
 master ansible_user=ansible ansible_host=192.168.2.8
-master_old ansible_user=ansible ansible_host=192.168.2.24
 crc ansible_user=root ansible_host=192.168.2.20
+jumphost ansible_user=master ansible_host=192.168.2.18
